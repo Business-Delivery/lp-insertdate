@@ -1,0 +1,28 @@
+
+<!--
+
+Find the location of the date in your current code and replace the first instance with:
+	<p id="displaydate" style="display: inline;"></p>/1/<p id="displayyear" style="display: inline;"></p>
+
+The second instance of the date with:
+	<p id="displaydate2" style="display: inline;"></p>/1/<p id="displayyear2" style="display: inline;"></p>
+
+
+-->
+
+
+
+<!-- Place this at the end of the page -->
+
+<script>
+window.onload = myFunction();
+function myFunction() {
+    var d = new Date(); //SET Current Date
+    var n = d.getMonth() + 1; //GET month value
+	var yeardate = d.getFullYear(); //GET year value
+    document.getElementById("displaydate").innerHTML = n; //DISPLAY MONTH ON SITE
+	document.getElementById("displaydate2").innerHTML = n;
+    document.getElementById("displayyear").innerHTML = yeardate; //DISPLAY YEAR ON SITE
+	document.getElementById("displayyear2").innerHTML = yeardate;
+}
+</script>
